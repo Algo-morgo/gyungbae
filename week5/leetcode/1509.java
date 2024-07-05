@@ -1,4 +1,6 @@
-if (nums.length <= 4) {
+class Solution {
+    public int minDifference(int[] nums) {
+        if (nums.length <= 4) {
             return 0;
         }
 
@@ -9,3 +11,5 @@ if (nums.length <= 4) {
         int diff4 = nums[nums.length - 1] - nums[3]; 
 
         return Math.min(Math.min(diff1, diff2), Math.min(diff3, diff4));
+    }
+}
